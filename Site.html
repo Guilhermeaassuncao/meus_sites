@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a escala para dispositivos móveis -->
+    <title>Motos Esportivas</title> <!-- Define o título da página -->
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Cor de fundo da página */
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #333; /* Fundo escuro */
+            color: white; /* Texto branco */
+            padding: 1rem 0; /* Espaçamento interno */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo do contêiner principal */
+        .container {
+            display: flex; /* Layout flexível */
+            flex-wrap: wrap; /* Permite quebra de linha dos itens */
+            justify-content: center; /* Centraliza os itens */
+            gap: 20px; /* Espaçamento entre os itens */
+            padding: 20px; /* Espaçamento interno */
+        }
+
+        /* Estilo dos cartões */
+        .card {
+            background-color: white; /* Fundo branco */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+            width: 300px; /* Largura fixa */
+            overflow: hidden; /* Evita que o conteúdo ultrapasse o cartão */
+            transition: transform 0.3s; /* Animação suave ao passar o mouse */
+        }
+
+        /* Efeito ao passar o mouse sobre o cartão */
+        .card:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+        }
+
+        /* Estilo das imagens nos cartões */
+        .card img {
+            width: 100%; /* Largura total do cartão */
+            height: 180px; /* Altura ajustada para caber no cartão */
+            object-fit: contain; /* Mantém as proporções da imagem sem cortar */
+            background-color: white; /* Fundo branco para imagens com transparência */
+        }
+
+        /* Estilo do conteúdo dentro dos cartões */
+        .card-content {
+            padding: 15px; /* Espaçamento interno */
+        }
+
+        /* Estilo do título dentro dos cartões */
+        .card-content h3 {
+            margin: 0 0 10px; /* Margem inferior */
+            font-size: 1.5rem; /* Tamanho do texto */
+            color: #333; /* Cor do texto */
+        }
+
+        /* Estilo dos parágrafos dentro dos cartões */
+        .card-content p {
+            margin: 5px 0; /* Margem superior e inferior */
+            color: #555; /* Cor do texto */
+        }
+
+        .card button {
+            background: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .card button:hover {
+            background: #cc3700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Motos Esportivas</h1> <!-- Título principal da página -->
+    </header>
+
+    <div class="container">
+        <!-- Cartão para a Hornet 600 -->
+        <div class="card">
+            <img src="C:\Users\Mr. Assunção\Desktop\HTMLBIOPARK\imgs\Hornet.png" alt="Hornet"> <!-- Imagem da moto -->
+            <div class="card-content">
+                <h3>Hornet 600</h3> <!-- Nome da moto -->
+                <p><strong>Motor:</strong> 599cc, 4 cilindros</p> <!-- Especificação do motor -->
+                <p><strong>Potência:</strong> 102 cv</p> <!-- Potência da moto -->
+                <p><strong>Velocidade Máxima:</strong> 230 km/h</p> <!-- Velocidade máxima -->
+                <p>R$ 50.000,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Cartão para a CBR1000RR -->
+        <div class="card">
+            <img src="https://7aftermarket.com/cdn/shop/products/Evotech-2020-Honda-CBR-RR-RSP-Front-02591_large_999d6555-3b99-42be-acff-5aeb665a8835.jpg?v=1605367736" alt="CBR1000RR"> <!-- Imagem da moto -->
+            <div class="card-content">
+                <h3>CBR1000RR</h3> <!-- Nome da moto -->
+                <p><strong>Motor:</strong> 999cc, 4 cilindros</p> <!-- Especificação do motor -->
+                <p><strong>Potência:</strong> 189 cv</p> <!-- Potência da moto -->
+                <p><strong>Velocidade Máxima:</strong> 299 km/h</p> <!-- Velocidade máxima -->
+                <p>R$ 150.000,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Cartão para a Kawasaki Ninja ZX-10R -->
+        <div class="card">
+            <img src="https://i.pinimg.com/474x/f2/9d/d6/f29dd617aff6307ebae27da91984b694.jpg" alt="Kawasaki Ninja ZX-10R"> <!-- Imagem da moto -->
+            <div class="card-content">
+                <h3>Kawasaki Ninja ZX-10R</h3> <!-- Nome da moto -->
+                <p><strong>Motor:</strong> 998cc, 4 cilindros</p> <!-- Especificação do motor -->
+                <p><strong>Potência:</strong> 203 cv</p> <!-- Potência da moto -->
+                <p><strong>Velocidade Máxima:</strong> 300 km/h</p> <!-- Velocidade máxima -->
+                <p>R$ 150.000,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
